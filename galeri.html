@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri sertifikat dan foto kegiatan Rudi Ansyah.">
+  <title>Galeri | Rudi Ansyah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a class="logo" href="index.html#home"><span>R</span> Rudi Ansyah</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">Tentang</a>
+        <a href="index.html#experience">Pengalaman</a>
+        <a href="index.html#skills">Keahlian</a>
+        <a href="index.html#projects">Project</a>
+        <a href="galeri.html" style="color:var(--text)">Galeri</a>
+        <a href="index.html#contact">Kontak</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Ganti tema">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <a class="back-link" href="index.html">← Kembali ke Portfolio</a>
+        <p class="eyebrow">GALLERY</p>
+        <h1>Galeri.</h1>
+        <p class="sub">Kumpulan sertifikat, penghargaan, dan dokumentasi kegiatan yang pernah saya ikuti.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="sertifikat">
+      <div class="container">
+        <div class="gallery-head reveal">
+          <div>
+            <p class="eyebrow">01 — CERTIFICATES</p>
+            <h2>Sertifikat</h2>
+          </div>
+          <div class="filters" id="certFilters"></div>
+        </div>
+        <div class="gallery-grid cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="kegiatan">
+      <div class="container">
+        <div class="gallery-head reveal">
+          <div>
+            <p class="eyebrow">02 — ACTIVITIES</p>
+            <h2>Foto Kegiatan</h2>
+          </div>
+          <div class="filters" id="photoFilters"></div>
+        </div>
+        <div class="gallery-grid photo-grid" id="photoGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rudi Ansyah</span>
+      <span>Built with HTML • CSS • JavaScript</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau gambar">
+    <span class="lb-count" id="lbCount"></span>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Tutup">✕</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Sebelumnya">←</button>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Berikutnya">→</button>
+    <figure class="lb-figure" id="lbFigure"></figure>
+  </div>
+
+  <button class="top-btn" id="topBtn" aria-label="Kembali ke atas">↑</button>
+  <script src="script.js"></script>
+  <script src="gallery-data.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
