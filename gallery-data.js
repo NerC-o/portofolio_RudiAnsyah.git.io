@@ -17,7 +17,7 @@
 
 const CERTIFICATES = [
   { title: "Sertifikat ITNSA — Tingkat Provinsi", category: "Kompetisi", year: "2024", desc: "Kompetisi IT bidang jaringan.",           src: "images/sertifikat/sertifikat2.jpg" },
-  { title: "Sertifikat ITNSA — Tingkat Nasional", category: "Kompetisi", year: "2024", desc: "Kompetisi IT bidang jaringan.",           src: "images/sertifikat/Sertifikat1 .jpg" },
+  { title: "Sertifikat ITNSA — Tingkat Nasional", category: "Kompetisi", year: "2024", desc: "Kompetisi IT bidang jaringan.",           src: "images/sertifikat/Sertifikat1.jpg" },
   { title: "Sertifikat pengalaman Kerja",      category: "Pelatihan", year: "2024", desc: "Sertifikat Pengalaman Kerja.",    src: "images/sertifikat/Sertifikat3.jpg" },
 ];
 
